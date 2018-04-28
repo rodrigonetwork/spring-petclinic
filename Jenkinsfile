@@ -9,6 +9,7 @@ pipeline {
     stage('java') {
       steps {
         sh 'echo $JAVA_HOME'
+        sh 'pwd'
         sh './mvnw check'
       }
     }
